@@ -494,6 +494,7 @@ input[type="text"]:focus {
     position: absolute;
     left: 140px;
     top: 1952px;
+    padding-bottom: 200px;
 }
 
 .heading-text-limitations {
@@ -558,18 +559,22 @@ input[type="text"]:focus {
     top: 472px;
 }
 
+.card-top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
 .card-image {
     width: 32px;
     height: 32px;
     flex: none;
     order: 0;
-    flex-grow: 0;
-}
-
-.card-top-section {
-    flex: none;
-    order: 0;
-    align-self: stretch;
     flex-grow: 0;
 }
 
