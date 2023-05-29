@@ -358,6 +358,7 @@ input[type="text"] {
     align-items: flex-start;
     padding: 0;
     gap: 56px;
+    padding-bottom: 200px;
 }
 
 .limitations-top-section {
