@@ -1,0 +1,593 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.curved-line-left, .curved-line-right {
+    display: none;
+}
+
+.gradient-bg {
+    width: 100vw;
+    height: 640px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    /* border-radius: 0px 0px 35px 35px; */
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 362px;
+    top: 32px;
+}
+
+.bmi-calculator {
+    width: 768px;
+    height: 640px;
+    border-radius: 0px 0px 35px 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.heading-section {
+    width: 686px;
+    height: 202px;
+    position: absolute;
+    left: 39px;
+    top: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+}
+
+.heading-text-top {
+    width: 686px;
+    height: 106px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #253347;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+}
+
+.body-text-top {
+    width: 686px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #5E6E85;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.calculator-section {
+    width: 686px;
+    height: 467px;
+    position: absolute;
+    left: 39px;
+    top: 354px;
+    background-color: #fff;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.heading-text-calculator {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.units-section {
+    width: 622px;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.metric-section, .imperial-section {
+    width: 299px;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 18px;
+    flex: none;
+    flex-grow: 1;
+}
+
+.metric-section {
+    order: 0;
+}
+
+.imperial-section {
+    order: 1;
+}
+
+input[type="radio"] {
+    width: 31px;
+    height: 31px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.label-units {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #253347;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.measurements-section {
+    width: 622px;
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.height-section, .weight-section {
+    width: 299px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    flex-grow: 1;
+}
+
+.height-section {
+    order: 0;
+}
+
+.weight-section {
+    order: 1;
+}
+
+.imperial-height-section, .imperial-weight-section {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.label-measurement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5E6E85;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.entry-section {
+    width: 299px;
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px 24px;
+    gap: 24px;
+    background-color: #fff;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+input[type="text"] {
+    width: 192px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+}
+
+.units {
+    width: 35px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #345FF6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.welcome-section {
+    width: 622px;
+    height: 149px;
+    background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
+    border-radius: 16px 999px 999px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.initial-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.heading-text-welcome {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.body-text-welcome {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.active-state {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+}
+
+.bmi-result {
+    width: 267px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bmi-result-heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bmi-reading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.bmi-result-meaning {
+    width: 267px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.image-hero {
+    width: 435px;
+    height: 411.09px;
+    position: absolute;
+    left: -116px;
+    top: 917px;
+}
+
+.meaning-section {
+    width: 331px;
+    height: 342px;
+    position: absolute;
+    left: 394px;
+    top: 952px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 32px;
+}
+
+.heading-text-meaning {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.body-text-meaning {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bmi-tips {
+    width: 686px;
+    height: 503px;
+    position: absolute;
+    left: 39px;
+    top: 1424.09px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 503px;
+    position: absolute;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    opacity: 0.25;
+}
+
+.card-tip {
+    width: 686px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+    flex: none;
+    flex-grow: 0;
+}
+
+.tip-image {
+    width: 64px;
+    height: 64px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.tip-section {
+    width: 582px;
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.heading-text-tip {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.body-text-tip {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bmi-limitations {
+    width: 686px;
+    height: 963px;
+    position: absolute;
+    left: 39px;
+    top: 2023.09px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 56px;
+}
+
+.heading-text-limitations {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #253347;
+}
+
+.body-text-limitations {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #5E6E85;
+}
+
+.limitations-section {
+    width: 686px;
+    height: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.card {
+    width: 335.5px;
+    height: 232px;
+    background-color: #fff;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.card-muscle {
+    height: 256px;
+}
+
+.card-pregnancy {
+    height: 256px;
+}
+
+.card-race {
+    width: 365px;
+}
+
+.card-top-section {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 16px;
+}
+
+.card-image {
+    width: 32px;
+    height: 32px;
+}
+
+.heading-text-card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #253347;
+}
+
+.body-text-card {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+}
+
+.hidden {
+    display: none;
+}

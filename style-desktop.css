@@ -1,0 +1,604 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.gradient-bg {
+    width: 978px;
+    height: 737px;
+    position: absolute;
+    left: 24px;
+    top: -1px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 0px 0px 35px 35px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 116px;
+    top: 75px;
+}
+
+.curved-line-left {
+    width: 85px;
+    height: 200px;
+    position: absolute;
+    left: 1188px;
+    top: 749px;
+}
+
+.curved-line-right {
+    width: 94px;
+    height: 122px;
+    position: absolute;
+    left: 305px;
+    top: 2203px;
+}
+
+.bmi-calculator {
+    width: 1276px;
+    height: 737px;
+}
+
+.heading-section {
+    width: 564px;
+    height: 271px;
+    position: absolute;
+    left: 116px;
+    top: 270px;
+}
+
+.heading-text-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: -5%;
+    color: #253347;
+}
+
+.body-text-top {
+    width: 465px;
+    position: absolute;
+    left: 0;
+    top: 175px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+}
+
+.calculator-section {
+    width: 564px;
+    height: 448px;
+    position: absolute;
+    top: 181px;
+    left: 736px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.heading-text-calculator {
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: -5%;
+    color: #253347;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.units-section {
+    width: 500px;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.metric-section, .imperial-section {
+    width: 238px;
+    height: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 18px;
+    flex: none;
+    flex-grow: 1;
+}
+
+.metric-section {
+    order: 0;
+}
+
+.imperial-section {
+    order: 1;
+}
+
+.imperial-section, .metric-section, #metric, #imperial, .label-units {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 31px;
+    height: 31px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.label-units {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #253347;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.measurements-section {
+    width: 500px;
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.height-section, .weight-section {
+    width: 238px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.height-section {
+    order: 0;
+}
+
+.weight-section {
+    order: 1;
+}
+
+.label-measurement {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5E6E85;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.imperial-height-section, .imperial-weight-section {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.entry-section {
+    width: 238px;
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 24px;
+    gap: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    box-sizing: border-box;
+    border: 1px solid #D8E2E7;
+    border-radius: 12px;
+}
+
+.entry-section:hover {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 131px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    opacity: 0.25;
+    border: none;
+}
+
+input[type="text"]:hover {
+    cursor: pointer;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #fff;
+}
+
+.units {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05px;
+    color: #345FF6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.welcome-section {
+    width: 500px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+    background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
+    border-radius: 16px 999px 999px 16px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.initial-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.initial-state {
+    width: 436px;
+    height: 66px;
+}
+
+.heading-text-welcome {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.body-text-welcome {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.active-state {
+    width: 436px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    flex: 0;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.bmi-result {
+    width: 206px;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.bmi-result-heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    flex: none;
+    order: 0;
+    align-items: stretch;
+    flex-grow: 0;
+}
+
+.bmi-reading {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.bmi-result-meaning {
+    width: 206px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.image-hero {
+    width: 564px;
+    height: 533px;
+    position: absolute;
+    left: 140px;
+    top: 801px;
+}
+
+.meaning-section {
+    width: 465px;
+    height: 309px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 35px;
+    position: absolute;
+    left: 835px;
+    top: 985px;
+}
+
+.heading-text-meaning {
+    width: 465px;
+    height: 106px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.body-text-meaning {
+    width: 465px;
+    height: 168px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+}
+
+.bmi-tips {
+    width: 1392px;
+    height: 402px;
+    position: absolute;
+    left: 24px;
+    top: 1430px;
+    border-radius: 35px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    opacity: 0.25;
+    border-radius: 35px;
+}
+
+.card-tip {
+    width: 365px;
+    height: 234px;
+    position: absolute;
+    top: 72px;
+    background-color: transparent;
+}
+
+.tips-eating {
+    left: 116px;
+}
+
+.tips-exercise {
+    left: 513px;
+}
+
+.tips-sleep {
+    left: 910px;
+}
+
+.tip-image {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+.heading-text-tip {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    position: absolute;
+    top: 109px;
+}
+
+.body-text-tip {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    position: absolute;
+    top: 162px;
+}
+
+.bmi-limitations {
+    width: 1160px;
+    height: 704px;
+    position: absolute;
+    left: 140px;
+    top: 1952px;
+}
+
+.heading-text-limitations {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: -0.05em;
+    color: #253347;
+}
+
+.body-text-limitations {
+    width: 564px;
+    height: 96px;
+    position: absolute;
+    top: 88px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+}
+
+.card {
+    width: 365px;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+}
+
+.card-gender {
+    height: 232px;
+    left: 696px;
+    top: 0;
+}
+
+.card-age {
+    height: 184px;
+    left: 398px;
+    top: 264px;
+}
+
+.card-muscle {
+    height: 184px;
+    left: 795px;
+    top: 264px;
+}
+
+.card-pregnancy {
+    height: 232px;
+    left: 199px;
+    top: 472px;
+}
+
+.card-race {
+    height: 232px;
+    left: 596px;
+    top: 472px;
+}
+
+.card-image {
+    width: 32px;
+    height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-top-section {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.heading-text-card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #253347;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.body-text-card {
+    width: 301px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E6E85;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.targeted {
+    border: 1px solid #345FF6;
+}
