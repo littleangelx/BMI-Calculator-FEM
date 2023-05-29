@@ -20,6 +20,18 @@ let previous;
 let heightMetres;
 let weight;
 
+const debounce = (func, delay=1000) => {
+    let timeoutId;
+    return (...args) => {
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(() => {
+            func.apply(null, args);
+        }, delay);
+    };
+};
+
 metric.addEventListener('change', function () {
     if (this.checked) {
         calculatorSection.style.height = "448px";
@@ -58,19 +70,24 @@ imperial.addEventListener('change', function () {
 });
 
 for (let entryBox of entryBoxes) {
-    entryBox.addEventListener('click', function () {
+    entryBox.addEventListener('click', function (e) {
+        if (e.target.value == 0) {
+            e.target.value = '';
+        }
         previous = document.querySelector('.targeted');
         entryBox.classList.add('targeted');
-        previous.classList.remove('targeted');
+        try {
+            previous.classList.remove('targeted');
+        } catch {}
     });
 }
 
-heightInput.addEventListener('input', calculateBMI);
-weightInput.addEventListener('input', calculateBMI);
-heightFtInput.addEventListener('input', calculateBMI);
-heightInInput.addEventListener('input', calculateBMI);
-weightStInput.addEventListener('input', calculateBMI);
-weightLbInput.addEventListener('input', calculateBMI);
+heightInput.addEventListener('input', debounce(calculateBMI, 1000));
+weightInput.addEventListener('input', debounce(calculateBMI, 1000));
+heightFtInput.addEventListener('input', debounce(calculateBMI, 1000));
+heightInInput.addEventListener('input', debounce(calculateBMI, 1000));
+weightStInput.addEventListener('input', debounce(calculateBMI, 1000));
+weightLbInput.addEventListener('input', debounce(calculateBMI, 1000));
 
 function calculateBMI () {
 
@@ -88,7 +105,7 @@ function calculateBMI () {
     }
 
 
-    if (heightMetres && weight > 10) {
+    if (heightMetres && weight) {
         const bmi = (weight / (heightMetres * heightMetres)).toFixed(1);
         const bmiHTML = document.querySelector('.bmi-reading');
         bmiHTML.innerHTML = bmi;
@@ -123,4 +140,6 @@ function calculateBMI () {
         initialState.classList.add('hidden');
     }
 }
+
+
 
